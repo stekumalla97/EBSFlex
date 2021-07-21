@@ -31,4 +31,4 @@ jobs:
          REACT_APP_CALLCENTER_FUNCTIONS_BASEURL: ${{ secrets.REACT_APP_CALLCENTER_FUNCTIONS_BASEURL }}
          REACT_APP_TWILIO_NUMBER: ${{ secrets.REACT_APP_TWILIO_NUMBER }}
         # Install the Twilio CLI and the serverless plugin then deploy the function
-        run: npm install twilio-cli -g && twilio plugins:install @twilio-labs/plugin-flex && twilio flex:plugins:deploy --environment=dev
+        run: npm install twilio-cli -g && twilio plugins:install @twilio-labs/plugin-flex && twilio flex:plugins:deploy
